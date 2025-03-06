@@ -1,0 +1,15 @@
+{
+  "name": "simpplenodemongodb",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de Aplicações com Node.js e MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.14.2"
+  }
+}
