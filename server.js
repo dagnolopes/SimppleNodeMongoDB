@@ -13,8 +13,8 @@ async function main() {
         const db = client.db("testdb");
         const collection = db.collection("people");
         // Inserir documentos
-        const person1 = { name: "Fulano", age: 30, city: "New York" };
-        const person2 = { name: "Beltrano", age: 25, city: "Los Angeles" };
+        const person1 = { nome: "JavaScript", age: 30, city: "New York",  texto: 'texto de javascript do mongoDB' };
+        const person2 = { nome: "JavaScript", age: 25, city: "Los Angeles",  texto: 'texto de javascript do mongoDB' };
         const insertResult1 = await collection.insertOne(person1);
         const insertResult2 = await collection.insertOne(person2);
         console.log("Documentos inseridos com sucesso!");
@@ -23,7 +23,7 @@ async function main() {
         const results = await cursor.toArray();
         console.log("Documentos encontrados:");
         results.forEach(result => {
-            console.log("Nome:", result.name);
+            console.log("Nome:", result.nome);
             console.log("Idade:", result.age);
             console.log("Cidade:", result.city);
             console.log("-------------------------");
